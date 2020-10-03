@@ -1,6 +1,6 @@
 const config = {
   pathPrefix: null,
-  siteUrl: `http://localhost:8000`,
+  siteUrl: `https://gatsby-strapi-rtl.netlify.app`,
   title: `Gatsby rtl starter`,
   description: `Gatsby RTL blog starter with Strapi CMS`,
 
