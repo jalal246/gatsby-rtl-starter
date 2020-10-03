@@ -30,6 +30,7 @@ const TitleAndMeta = ({
           siteUrl
           title
           description
+          googleVerification
           author {
             name
             fbID
