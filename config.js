@@ -1,11 +1,14 @@
 const config = {
   pathPrefix: null,
   siteUrl: `http://localhost:8000`,
-  title: `موقع جون دو`,
-  description: `موقع جاتسبي من اليمين لليسار`,
+  title: `Gatsby rtl starter`,
+  description: `Gatsby RTL blog starter with Strapi CMS`,
 
-  trackingId: `put your own here`,
-  googleVerification: `put your own here`,
+  // put your own here
+  trackingId: `G-LC62XFEB21`,
+
+  // put your own here
+  googleVerification: `C7SmJ-skNziVPE1xVRqGnj7MplLbtGcdV3WdbQ1pS-c`,
 
   postsPerPage: 4,
 
@@ -15,7 +18,8 @@ const config = {
     contacts: [
       { name: "INSTAGRAM", link: "https://www.instagram.com/" },
       { name: "FACEBOOK", link: "https://www.facebook.com/" },
-      { name: "TWITTER", link: "https://twitter.com/" },
+      { name: "TWITTER", link: "https://twitter.com/jalal246" },
+      { name: "GITHUB", link: "https://github.com/jalal246" },
     ],
     fbID: ``,
   },

@@ -2,6 +2,9 @@ import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 import { Helmet } from "react-helmet";
 
+// remove this line for your site.
+const defaultAuthorName = "Jalal Maskoun";
+
 const TitleAndMeta = ({
   title,
   author,
@@ -16,7 +19,7 @@ const TitleAndMeta = ({
         siteUrl,
         title: siteName,
         description: defaultDescription,
-        author: { name: defaultAuthorName, fbID },
+        author: { /** name: defaultAuthorName * */ fbID },
         googleVerification,
       },
     },
@@ -42,7 +45,7 @@ const TitleAndMeta = ({
   const renderAuthor = author || defaultAuthorName;
 
   return (
-    <Helmet>
+    <Helmet title={renderTitle}>
       <meta name="google-site-verification" content={googleVerification} />
       <meta name="title" content={renderTitle} />
       <meta name="description" content={renderDesc} />
