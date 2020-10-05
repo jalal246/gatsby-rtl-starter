@@ -22,7 +22,7 @@ This is a highly customized rtl starter:
 > Samples are written in Arabic but the starter works for any rtl languages
 > including Hebrew.
 
-## Know limitations
+## Known limitations
 
 - It's not responsive.
 
