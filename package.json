@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-rtl-starter-strapi",
+  "name": "gatsby-rtl-starter",
   "private": true,
-  "description": "A simple starter to for RTL languages with Strapi CMS ",
+  "description": "A simple starter for RTL languages with Strapi CMS",
   "version": "0.1.0",
   "author": "Jalal Maskoun <jimmy002020@gmail.com>",
   "dependencies": {
