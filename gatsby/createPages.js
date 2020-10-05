@@ -51,29 +51,15 @@ async function createPages({ graphql, actions }) {
   const notFoundTemplate = resolve(templatesPath, "notFound.js");
 
   const blogTemplate = resolve(templatesPath, "blog.js");
-  const pageTemplate = resolve(templatesPath, "page.js");
+  const serverPageTemplate = resolve(templatesPath, "serverPage.js");
+  const localPageTemplate = resolve(templatesPath, "localPage.js");
   const feedTemplate = resolve(templatesPath, "feed.js");
-
-  // const tagTemplate = resolve(templatesPath, "tag.js");
-  // const categoryTemplate = resolve(templatesPath, "category.js");
 
   // 404
   createPage({
     path: "/404",
     component: resolve(notFoundTemplate),
   });
-
-  // // Tags list
-  // createPage({
-  //   path: "/tags",
-  //   component: tagTemplate,
-  // });
-
-  // // Categories list
-  // createPage({
-  //   path: "/categories",
-  //   component: categoryTemplate,
-  // });
 
   const siteData = await graphql(
     `
@@ -97,6 +83,16 @@ async function createPages({ graphql, actions }) {
             }
           }
         }
+
+        allMarkdownRemark {
+          edges {
+            node {
+              fields {
+                slug
+              }
+            }
+          }
+        }
       }
     `
   );
@@ -112,6 +108,7 @@ async function createPages({ graphql, actions }) {
     data: {
       allStrapiBlog: { edges: apiBlog },
       allStrapiSiteMeta: { edges: apiPages },
+      allMarkdownRemark: { edges: localPages },
     },
   } = siteData;
 
@@ -125,7 +122,14 @@ async function createPages({ graphql, actions }) {
   await createBlogPages({
     createPage,
     edges: apiPages,
-    template: pageTemplate,
+    template: serverPageTemplate,
+  });
+
+  // local content pages
+  await createBlogPages({
+    createPage,
+    edges: localPages,
+    template: localPageTemplate,
   });
 }
 

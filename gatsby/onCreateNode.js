@@ -43,9 +43,13 @@ function onCreateNode({ node, actions, getNode }) {
   }
 
   if (node.internal.type === `MarkdownRemark`) {
-    const { relativePath } = getNode(node.parent);
+    if (!node.frontmatter.slug) {
+      const { relativePath } = getNode(node.parent);
 
-    slug = `/${relativePath.replace(".md", ".html")}`;
+      slug = `/${relativePath.replace(".md", ".html")}`;
+    } else {
+      slug = kebabCase(node.frontmatter.slug);
+    }
 
     createNodeField({
       node,

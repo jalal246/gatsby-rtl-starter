@@ -18,7 +18,7 @@ const Page = ({ location, data }) => {
 };
 
 export const pageQuery = graphql`
-  query TemplatePageMarkdown($slug: String!) {
+  query TemplateStrapiPageMarkdown($slug: String!) {
     strapiSiteMeta(fields: { slug: { eq: $slug } }) {
       content
       title
