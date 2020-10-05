@@ -44,7 +44,8 @@
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-jsx-a11y": "6.3.0",
     "eslint-plugin-react": "7.20.0",
-    "eslint-plugin-react-hooks": "4"
+    "eslint-plugin-react-hooks": "4",
+    "prettier": "^2.1.2"
   },
   "license": "MIT",
   "scripts": {
@@ -58,9 +59,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/jalal246/gatsby-rtl-starter"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/jalal246/gatsby-rtl-starter/issues"
   }
 }
