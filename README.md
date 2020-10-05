@@ -22,7 +22,28 @@ This is a highly customized rtl starter:
 > Samples are written in Arabic but the starter works for any rtl languages
 > including Hebrew.
 
-## Know limitations
+## Strapi CMS
+
+- You can find the source code here
+  [strapi-monogo-rtl](https://github.com/jalal246/strapi-monogo-rtl) includes
+  all the features.
+
+- Check out the graphql server:
+  [strapi-monogo-rtl/graphql](https://strapi-monogo-rtl.herokuapp.com/graphql).
+
+- Strapi is deployed on [Heroku](https://strapi-monogo-rtl.herokuapp.com/).
+
+## Deployment
+
+- Clone the repo `https://github.com/jalal246/gatsby-rtl-starter.git`
+
+- Instal dependencies `yarn`
+
+- Start deployment `yarn develop`
+
+- To deployment to netlify [follow connecting to Netlify guide](https://www.netlify.com/blog/2016/02/24/a-step-by-step-guide-gatsby-on-netlify/)
+
+## Known limitations
 
 - It's not responsive.
 
