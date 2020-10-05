@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "gatsby-rtl-starter-strapi",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "A simple starter to for RTL languages with Strapi CMS ",
   "version": "0.1.0",
   "author": "Jalal Maskoun <jimmy002020@gmail.com>",
   "dependencies": {
@@ -57,6 +57,23 @@
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
+  "keywords": [
+    "gatsby",
+    "gatsby-theme",
+    "gatsby-starter",
+    "gatsby-rtl",
+    "gatsby-arabic",
+    "gatsby-strapi",
+    "static-site-generator",
+    "netlify",
+    "jamstack",
+    "starter-template",
+    "pagination",
+    "blog",
+    "minimal",
+    "react",
+    "starter"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/jalal246/gatsby-rtl-starter"
