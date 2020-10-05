@@ -41,7 +41,7 @@ This is a highly customized rtl starter:
 
 - Start deployment `yarn develop`
 
-- To deployment to netlify [follow connecting to Netlify guide](https://www.netlify.com/blog/2016/02/24/a-step-by-step-guide-gatsby-on-netlify/)
+- For deployment to netlify [follow connecting to Netlify guide](https://www.netlify.com/blog/2016/02/24/a-step-by-step-guide-gatsby-on-netlify/)
 
 ## Known limitations
 
