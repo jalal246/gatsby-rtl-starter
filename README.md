@@ -25,8 +25,9 @@ This is a highly customized rtl starter:
 ## Strapi CMS
 
 - You can find the source code here
-  [strapi-monogo-rtl](https://github.com/jalal246/strapi-monogo-rtl) includes
-  all the features.
+  [strapi-monogo-rtl](https://github.com/jalal246/strapi-monogo-rtl) which
+  includes blogs with categories, tags, Graphql, and check5 editor. Connected to
+  MongoDB and Cloudinary.
 
 - Check out the graphql server:
   [strapi-monogo-rtl/graphql](https://strapi-monogo-rtl.herokuapp.com/graphql).
