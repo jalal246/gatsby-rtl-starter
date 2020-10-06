@@ -47,9 +47,4 @@ This is a highly customized rtl starter:
 
 ## Known limitations
 
-- It's not responsive.
-
-- Despite it has all plugins to read local content, I don't think there's a need
-  to aut generate pages form local based content since it already has Strapi.
-
-### PRs are welcome
+- It's not responsive. But PRs are welcome!
