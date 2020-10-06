@@ -6,7 +6,7 @@ This is a highly customized rtl starter:
 
 - Pages auto-generated from the server. Including blogs pages `blog/**/title` and
   internal pages `pages/title`. It also creates pages from all `md` files
-  content exists in the content file, and slugify each file individually.
+  content exists in the content file.
 
 - Templates for the blog, feed, page (locally and in the server), and 404.
 
