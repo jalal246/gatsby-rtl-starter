@@ -70,9 +70,7 @@
     "starter-template",
     "pagination",
     "blog",
-    "minimal",
-    "react",
-    "starter"
+    "react"
   ],
   "repository": {
     "type": "git",

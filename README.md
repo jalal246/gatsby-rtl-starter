@@ -4,10 +4,11 @@ This is a highly customized rtl starter:
 
 - Includes Strapi as a CMS. Connected to the Strapi server hosted in Heroku.
 
-- Pages auto generated from server. Including blogs pages `blog/**/title` and
-  internal pages `pages/title`.
+- Pages auto-generated from the server. Including blogs pages `blog/**/title` and
+  internal pages `pages/title`. It also creates pages from all `md` files
+  content exists in the content file, and slugify each file individually.
 
-- Templates for the blog, feed, page, and 404.
+- Templates for the blog, feed, page (locally and in the server), and 404.
 
 - A very component-based to increase your work productivity and make it for
   customization.
