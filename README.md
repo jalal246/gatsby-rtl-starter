@@ -27,7 +27,7 @@ This is a highly customized rtl starter:
 
 - You can find the source code here
   [strapi-monogo-rtl](https://github.com/jalal246/strapi-monogo-rtl) which
-  includes blogs with categories, tags, Graphql, and check5 editor. Connected to
+  includes blogs with categories, tags, Graphql, and CKEditor 5. Connected to
   MongoDB and Cloudinary.
 
 - Check out the graphql server:
