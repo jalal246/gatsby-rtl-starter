@@ -16,7 +16,7 @@ function getSlug({ dt, title }) {
   return slug;
 }
 
-function onCreateNode({ node, actions }) {
+function onCreateNode({ node, actions, getNode }) {
   const { createNodeField } = actions;
 
   let slug;
@@ -39,6 +39,22 @@ function onCreateNode({ node, actions }) {
       node,
       name: "slug",
       value: appendHTML(slug),
+    });
+  }
+
+  if (node.internal.type === `MarkdownRemark`) {
+    if (!node.frontmatter.slug) {
+      const { relativePath } = getNode(node.parent);
+
+      slug = `/${relativePath.replace(".md", ".html")}`;
+    } else {
+      slug = kebabCase(node.frontmatter.slug);
+    }
+
+    createNodeField({
+      node,
+      name: "slug",
+      value: slug,
     });
   }
 }

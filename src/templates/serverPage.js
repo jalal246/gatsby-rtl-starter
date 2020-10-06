@@ -8,24 +8,19 @@ const Page = ({ location, data }) => {
     strapiSiteMeta: {
       content: html,
       title,
-      excerpt,
       fields: { slug },
     },
   } = data;
 
   return (
-    <MarkdownPageWithLayout
-      location={location}
-      data={{ html, title, excerpt, slug }}
-    />
+    <MarkdownPageWithLayout location={location} data={{ html, title, slug }} />
   );
 };
 
 export const pageQuery = graphql`
-  query TemplatePageMarkdown($slug: String!) {
+  query TemplateStrapiPageMarkdown($slug: String!) {
     strapiSiteMeta(fields: { slug: { eq: $slug } }) {
       content
-      #excerpt(pruneLength: 500)
       title
       fields {
         slug

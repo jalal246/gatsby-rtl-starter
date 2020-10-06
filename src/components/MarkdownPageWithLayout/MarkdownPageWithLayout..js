@@ -4,7 +4,7 @@ import Layout from "../Layout";
 import MarkdownPage from "../MarkdownPage";
 
 const MarkdownPageWithLayout = ({ location, data }) => {
-  const { html, title, excerpt, date, slug } = data;
+  const { html, title, description, excerpt, date, slug } = data;
 
   return (
     <Layout location={location}>
@@ -13,7 +13,7 @@ const MarkdownPageWithLayout = ({ location, data }) => {
         slug={slug}
         date={date}
         title={title}
-        description={excerpt}
+        description={description || excerpt}
         html={html}
       />
     </Layout>

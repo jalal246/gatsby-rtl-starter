@@ -4,10 +4,11 @@ This is a highly customized rtl starter:
 
 - Includes Strapi as a CMS. Connected to the Strapi server hosted in Heroku.
 
-- Pages auto generated from server. Including blogs pages `blog/**/title` and
-  internal pages `pages/title`.
+- Pages auto-generated from the server. Including blogs pages `blog/**/title` and
+  internal pages `pages/title`. It also creates pages from all `md` files
+  content exists in the content file.
 
-- Templates for the blog, feed, page, and 404.
+- Templates for the blog, feed, page (locally and in the server), and 404.
 
 - A very component-based to increase your work productivity and make it for
   customization.
@@ -25,8 +26,9 @@ This is a highly customized rtl starter:
 ## Strapi CMS
 
 - You can find the source code here
-  [strapi-monogo-rtl](https://github.com/jalal246/strapi-monogo-rtl) includes
-  all the features.
+  [strapi-monogo-rtl](https://github.com/jalal246/strapi-monogo-rtl) which
+  includes blogs with categories, tags, Graphql, and check5 editor. Connected to
+  MongoDB and Cloudinary.
 
 - Check out the graphql server:
   [strapi-monogo-rtl/graphql](https://strapi-monogo-rtl.herokuapp.com/graphql).
@@ -45,9 +47,4 @@ This is a highly customized rtl starter:
 
 ## Known limitations
 
-- It's not responsive.
-
-- Despite it has all plugins to read local content, I don't think there's a need
-  to aut generate pages form local based content since it already has Strapi.
-
-### PRs are welcome
+- It's not responsive. But PRs are welcome!
